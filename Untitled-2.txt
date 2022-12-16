@@ -1,0 +1,42 @@
+
+
+function CreacionDoctor(){
+
+    $.ajax({
+        url : 'https://gec99241162eb67-e51qj1qb1sga9bfu.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/doctor/doctor'
+        type : 'GET'
+        dataType : 'json',
+
+        success : function(CreacionDoctor){
+            let cd = doctor.items;
+            for(i=0;i<cd.length;i++){
+                $("listadoctor").append("<h2>"+cd[i].name+"</h2>");
+            }
+            
+        },       
+        error : function(xhr, status){
+            alert('ha sucedio un problema');
+        }
+    });
+}
+
+
+function guardardoctor(){
+    let iddoctor=$("#idmedicos").val();
+    let Especialidad=$("#specialty").val();
+    let year=$("#graduate_year").val();
+    let Departamento=$("#department_ID").val();
+    let Nombre=$("#name").val();
+
+    let data ={
+        id:iddoctor
+        specialty:Especialidad,
+        graduate_year:year,
+        department_id:Departamento,
+        name:Nombre
+
+    }
+    let dataToSend=JSON.stringify(data);
+    console.log(data);
+
+}

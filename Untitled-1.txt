@@ -1,0 +1,26 @@
+<!DOCTYPE htlm>
+<htlm>
+<head>
+    <title>MisionTic2022</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="myScript.js"></script>
+<body>
+
+    <h1>Doctor</h1>
+
+    Id de doctor: <input type="number" id="idmedicos"><br>
+    Especialidad: <input type="text" id="speciality"><br>
+    Año de guardado: <input type="number" id="graduate_year"><br>
+    Id Departamento: <input type="number" id="department_ID"></br>
+    Nombre: <input type="text" id="name"><br>
+    
+    <button onclick="Guardar Doctor()">GUARDAR DOCTOR</button>
+    <button onclick="Creación Doctor()">TRAER DOCTOR</button>
+
+    <div id="listadoctor">
+    
+    </div>
+
+</body>
+</htlm>
