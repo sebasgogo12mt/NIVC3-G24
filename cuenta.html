@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cuentas</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/cuenta.js"></script>
+<button onclick="location.href='index.html'">HOME</button>
+
+<body
+    style="background-image: url(bank.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <center>
+        <h1 style="color: rgb(236, 236, 233);">GESTION DE CUENTAS</h1>
+        <br>
+        <br>
+        <br>       
+        <span style="color: rgb(239, 239, 236);">
+            Id de la cuenta: <input type="number" id="idCuenta"><br>
+            Fecha de apertura: <input type="date" id="fechaApertura"><br>
+            Saldo en la cuenta: <input type="number" id="saldoCuenta"><br>
+        </span>
+        <button onclick="guardarCuenta()">GUARDAR CUENTA</button>
+        <button onclick="editarCuenta()">ACTUALIZAR DATOS DE CUENTA</button>
+        <button onclick="leerCuentas()">MOSTRAR CUENTAS</button>
+    </center>
+    <br>
+    <div id="listaCuentas">
+
+    </div>
+
+
+</body>
+
+</html>

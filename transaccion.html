@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transacciones</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/transaccion.js"></script>
+<button onclick="location.href='index.html'">HOME</button>
+
+<body
+    style="background-image: url(bank.jpg);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <center>
+        <h1 style="color: rgb(249, 249, 249);">Realiza tu transaccion</h1>
+        <br>
+        <br>
+        <br>
+        <span style="color: rgb(239, 239, 237);">
+            Id de la transaccion: <input type="number" id="idTransaccion"><br>
+            Fecha de la transaccion: <input type="date" id="fechaTransaccion"><br>
+            Valor de la transaccion: <input type="number" id="valorTransaccion"><br>
+            Tipo de transaccion<input type=checkbox name="Retiro" value="Retiro" checked>Retiro
+            <input type=checkbox name="Consignacion" value="Consignacion">Consignacion<br>
+        </span>
+
+        <button onclick="guardarTransaccion()">REALIZAR TRANSACCION</button>
+        <button onclick="leerTransacciones()">HISTORIAL DE TRANSACCIONES</button>
+    </center>
+    <br>
+    <div id="listaTransacciones">
+
+    </div>
+
+
+</body>
+
+</html>
